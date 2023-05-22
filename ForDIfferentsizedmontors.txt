@@ -1,0 +1,12 @@
+monitor resolutions and all that jazz
+
+normal monitor 1920 * 1080
+laptop monitor 1366 * 768
+
+scale = round(1920 / 1366, 2) = 1.40556369
+widthScaled = round(imgwidth / scale)
+
+1080 / 768 = 1.40625
+heightScaled = round(imgheight / 1.4)
+
+pygame.transform.scale(image, (imgwidth, imgheight))
